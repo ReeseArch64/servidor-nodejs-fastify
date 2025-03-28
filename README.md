@@ -8,8 +8,14 @@ Criando servidor http básico no node.js usando Fastify.js
 npm install
 ```
 
+**Compilar**
+
+```bash
+npx tsc
+```
+
 **Inicie o Servidor**
 
 ```bash
-node index.js
+node src/http/server.js
 ```
