@@ -1,9 +1,13 @@
-import fastify from "fastify";
+import "dotenv/config"
+
+import fastify from "fastify"
 
 const app = fastify()
+
+const port = Number(process.env.PORT)
 
 app.get('/', () => {
   return 'ok'
 })
 
-app.listen({ port: 3000 })
+app.listen({ port: port })
